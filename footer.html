@@ -1,0 +1,290 @@
+<div style="background-color:black">
+  <div class="grid-container">
+    <div class="item1">
+      <label class="text">
+
+        <div class="email_img" style="float:left; ">
+          <a href="https://www.dot.state.al.us/programs/RAAGrantProgram.html" target="_blank"><img src="https://aldot.maps.arcgis.com/sharing/rest/content/items/dd245b2010744bbcab1c648bdba02e12/data" width="100%" height="100%"></a>
+        </div>
+
+      </label>
+
+    </div>
+    <div class="item2">
+      <label class="text">Click here to download PDF files:</label>
+      <nav>
+        <ul class="my-nav" style="margin-top:0;">
+          <li>
+            <details class="dropdown">
+              <summary style="padding: .2em 1em .2em 1em">ATRIP2</summary>
+              <ul>
+                <li><a href="https://aldot.maps.arcgis.com/sharing/rest/content/items/061ec278156f4dcb9287fe7d7fb15847/data" target="_blank">2021</a>
+                </li>
+                <li><a href="https://aldot.maps.arcgis.com/sharing/rest/content/items/d8f55d62595941dca18287ce266381f4/data" target="_blank">2020</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+          <li>
+            <details class="dropdown">
+              <summary style="padding: .2em .5em .2em .5em">Rebuild Alabama</summary>
+              <ul>
+                <li><a href="https://aldot.maps.arcgis.com/sharing/rest/content/items/d8176a7996d64112b465b7e681f3a6af/data" target="_blank">2021</a>
+                </li>
+                <li><a href="https://aldot.maps.arcgis.com/sharing/rest/content/items/d821990d08fa44c190f5bb28d1c17236/data" target="_blank">2020</a>
+                </li>
+              </ul>
+            </details>
+          </li>
+        </ul>
+      </nav>
+
+      </label>
+    </div>
+    <div class="item3">
+      <label class="text" style="float:right; ">
+        <a href="mailto:gissupport@dot.state.al.us" target="_blank">
+          <div class="email_img">
+            <img src="https://aldot.maps.arcgis.com/sharing/rest/content/items/bbc9806136e14f999d2ba234fac7ba7c/data" width="100%" height="100%">
+            <div>
+              Email us @: gissupport@dot.state.al.us
+            </div>
+          </div>
+        </a>
+      </label>
+    </div>
+  </div>
+</div>
+
+<style>
+  .co {
+    float: left;
+    width: 50%;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .text {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 0;
+    padding: 5px 0 5px 0;
+  }
+
+  .grid-container>div {
+    text-align: left;
+    padding: 0;
+    font-size: 1em;
+  }
+
+  .item1 {
+    grid-row: 1 / 2;
+    grid-column: 1 / 1;
+  }
+
+  .item2 {
+    justify-self: center;
+  }
+
+  .email_img {
+    position: relative;
+    width: 65px;
+    height: 65px;
+    float: right;
+  }
+
+  .email_img div {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: black;
+    color: white;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: visibility 0s, opacity 0.5s linear;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+
+  .email_img:hover {
+    cursor: pointer;
+  }
+
+  .email_img:hover div {
+    width: 200px;
+    padding: 8px 2px;
+    visibility: visible;
+    opacity: 0.7;
+    top: 0px;
+    right: 0px;
+  }
+
+  .my-nav {
+    list-style: none;
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    padding: 0;
+  }
+
+  .my-nav>li {
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+
+  .my-nav>li:before {
+    position: absolute;
+  }
+
+  /* The buttons */
+  .dropdown>summary {
+    cursor: pointer;
+    /* Customize from here down */
+    box-shadow: inset 4px 5px 16px -10px #fff;
+    background-color: transparent;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 4%;
+    text-decoration: none;
+    border: 2px solid #a3a3a3;
+    width: fit-content;
+    height: 1.2em;
+    display: absolute;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .dropdown>summary:hover,
+  .dropdown>summary:focus {
+    background: linear-gradient(to bottom, #ACB4BF 5%, #fff 100%);
+    background-color: #ACB4BF;
+    color: black;
+  }
+
+  .dropdown {
+    display: table;
+    position: relative;
+    outline: none;
+  }
+
+  /* The dropdowns */
+  .dropdown>ul {
+    position: absolute;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #cccccc;
+    border-radius: 0.25em;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 6em;
+    top: 1.5em;
+    overflow: hidden;
+  }
+
+  .dropdown>ul>li>a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .dropdown>ul>li:before {
+    position: absolute;
+  }
+
+
+  .dropdown a:link {
+    text-decoration: none;
+  }
+
+  .dropdown a:hover {
+    background-color: #ddd;
+    color: red;
+  }
+
+  @media (min-width: 800px) and (max-width: 1207px) {
+    .text {
+      font-size: 1em;
+    }
+
+    .item1 {
+      grid-row: 1 / 2;
+      grid-column: 1/1;
+    }
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 800px) {
+    .text {
+      font-size: 16px;
+    }
+
+    .item1 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 1;
+    }
+  }
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .text {
+      font-size: 14px;
+    }
+
+    .dropdown>summary {
+      font-size: 10px;
+    }
+
+    .item1 {
+      grid-row: 1 / 2;
+      grid-column: 1 / 1;
+    }
+  }
+</style>
+
+<script>
+  var nav = document.querySelector('.my-nav');
+  nav.addEventListener('toggle', function(event) {
+    // Only run if the dropdown is open
+    if (!event.target.open) return;
+    // Get all other open dropdowns and close them
+    var dropdowns = nav.querySelectorAll('.dropdown[open]');
+    Array.prototype.forEach.call(dropdowns, function(dropdown) {
+      if (dropdown === event.target) return;
+      dropdown.removeAttribute('open');
+    });
+  }, true);
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.open) {
+      var dropdowns = nav.querySelectorAll('.dropdown[open]');
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('open')) {
+          openDropdown.classList.remove('open');
+        }
+      }
+    }
+  }
+</script>
